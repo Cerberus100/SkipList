@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "\\\\GMRDC1\\Folder Redirection\\luke.collins\\Documents\\Visual Studio 2019\\Projects\\Skip List Project\\Skip List Project\\Skip List Project.csproj": {}
+    "\\\\gmrdc1\\Folder Redirection\\luke.collins\\Documents\\Visual Studio 2019\\Projects\\Skip List Project\\Skip List Project\\Skip List Project.csproj": {}
   },
   "projects": {
-    "\\\\GMRDC1\\Folder Redirection\\luke.collins\\Documents\\Visual Studio 2019\\Projects\\Skip List Project\\Skip List Project\\Skip List Project.csproj": {
+    "\\\\gmrdc1\\Folder Redirection\\luke.collins\\Documents\\Visual Studio 2019\\Projects\\Skip List Project\\Skip List Project\\Skip List Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\GMRDC1\\Folder Redirection\\luke.collins\\Documents\\Visual Studio 2019\\Projects\\Skip List Project\\Skip List Project\\Skip List Project.csproj",
+        "projectUniqueName": "\\\\gmrdc1\\Folder Redirection\\luke.collins\\Documents\\Visual Studio 2019\\Projects\\Skip List Project\\Skip List Project\\Skip List Project.csproj",
         "projectName": "Skip List Project",
-        "projectPath": "\\\\GMRDC1\\Folder Redirection\\luke.collins\\Documents\\Visual Studio 2019\\Projects\\Skip List Project\\Skip List Project\\Skip List Project.csproj",
+        "projectPath": "\\\\gmrdc1\\Folder Redirection\\luke.collins\\Documents\\Visual Studio 2019\\Projects\\Skip List Project\\Skip List Project\\Skip List Project.csproj",
         "packagesPath": "C:\\Users\\luke.collins\\.nuget\\packages\\",
-        "outputPath": "\\\\GMRDC1\\Folder Redirection\\luke.collins\\Documents\\Visual Studio 2019\\Projects\\Skip List Project\\Skip List Project\\obj\\",
+        "outputPath": "\\\\gmrdc1\\Folder Redirection\\luke.collins\\Documents\\Visual Studio 2019\\Projects\\Skip List Project\\Skip List Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

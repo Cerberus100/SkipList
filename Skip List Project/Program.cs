@@ -1,12 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Skip_List_Project
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Node<int> node = new Node<int>(5);
+            ICollection
+            //var neighbor = node[2];
+
+            //node[2] = new Node<int>(5);
         }
     }
 }
