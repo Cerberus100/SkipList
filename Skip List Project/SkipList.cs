@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 using System.Text;
+using System.Transactions;
 
 namespace Skip_List_Project
 {
@@ -18,7 +20,7 @@ namespace Skip_List_Project
         public SkipList()
         {
             count = 0;
-            head = new Node<T>();
+            head = new Node<T>(1);
         }
 
 
@@ -45,17 +47,32 @@ namespace Skip_List_Project
         {
             Node<T> newNode = new Node<T>(value, ChooseRandomHeight());
 
+            if (newNode.Height > head.Height)
+            {
+                head.Increment(); 
+            }
+
             Node<T> cur = head;
 
-            int a = cur.Height;
+            int a = cur.Height - 1;
 
             while (a >= 0)
             {
-                int compare = newNode.Value.CompareTo(cur.Value); //im pretty sure this is wrong
-                
-                //TODO: finish learning how to search through. Then finish add. 
+                int compare = newNode.Value.CompareTo(cur.Value); 
 
-
+                if (compare > 0)
+                {
+                    if (newNode.Height > a)
+                    {
+                        newNode[a] = cur[a];
+                        cur[a] = newNode;
+                    }
+                    a--;
+                }
+                else
+                {
+                    cur = cur[a]; 
+                }
             }
 
             count++; 

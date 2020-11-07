@@ -1,0 +1,13 @@
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\bin\Debug\netcoreapp3.1\Skip List Project.exe
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\bin\Debug\netcoreapp3.1\Skip List Project.deps.json
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\bin\Debug\netcoreapp3.1\Skip List Project.runtimeconfig.json
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\bin\Debug\netcoreapp3.1\Skip List Project.runtimeconfig.dev.json
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\bin\Debug\netcoreapp3.1\Skip List Project.dll
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\bin\Debug\netcoreapp3.1\Skip List Project.pdb
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\obj\Debug\netcoreapp3.1\Skip List Project.csprojAssemblyReference.cache
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\obj\Debug\netcoreapp3.1\Skip List Project.AssemblyInfoInputs.cache
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\obj\Debug\netcoreapp3.1\Skip List Project.AssemblyInfo.cs
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\obj\Debug\netcoreapp3.1\Skip List Project.csproj.CoreCompileInputs.cache
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\obj\Debug\netcoreapp3.1\Skip List Project.dll
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\obj\Debug\netcoreapp3.1\Skip List Project.pdb
+\\GMRDC1\Folder Redirection\luke.collins\Documents\Visual Studio 2019\Projects\Skip List Project\Skip List Project\obj\Debug\netcoreapp3.1\Skip List Project.genruntimeconfig.cache

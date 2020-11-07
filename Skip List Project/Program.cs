@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 namespace Skip_List_Project
 {
@@ -7,11 +8,10 @@ namespace Skip_List_Project
     {
         static void Main(string[] args)
         {
-            Node<int> node = new Node<int>(5);
-            ICollection
-            //var neighbor = node[2];
+            var list = new SkipList<int>();
 
-            //node[2] = new Node<int>(5);
+            list.Add(5);
+            list.Add(10);
         }
     }
 }
