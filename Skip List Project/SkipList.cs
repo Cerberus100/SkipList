@@ -9,7 +9,7 @@ using System.Transactions;
 namespace Skip_List_Project
 {
     public class SkipList<T> : ICollection<T>
-        where T : IComparable<T>
+        where T : IComparable<T>        
     {
         private int count;
         public int Count => count;
@@ -47,18 +47,21 @@ namespace Skip_List_Project
         {
             Node<T> newNode = new Node<T>(value, ChooseRandomHeight());
 
-            if (newNode.Height > head.Height)
-            {
-                head.Increment(); 
-            }
-
             Node<T> cur = head;
 
             int a = cur.Height - 1;
 
             while (a >= 0)
             {
-                int compare = newNode.Value.CompareTo(cur.Value); 
+                int compare;
+                if (cur[a] == null)
+                {
+                    compare = 1;
+                }
+                else
+                {
+                    compare = cur[a].Value.CompareTo(value);
+                }
 
                 if (compare > 0)
                 {
@@ -83,24 +86,107 @@ namespace Skip_List_Project
             count = 0;
         }
 
-        public bool Remove(T item)
+        public bool Remove(T value)
         {
-            throw new NotImplementedException();
+            int level = head.Height - 1;
+            Node<T> node = head;
+            bool removed = false;
+
+            while (level >= 0)
+            {
+                int comparison;
+                if (node[level] == null)
+                {
+                    comparison = 1;
+                }
+                else
+                {
+                    comparison = node[level].Value.CompareTo(value); 
+                }
+
+                if (comparison < 0)
+                {
+                    node = node[level];
+                }
+                else if (comparison > 0)
+                {
+                    level--;
+                }
+                else //if they are equal
+                {
+                    removed = true;
+                    node[level] = node[level][level]; //skips over the node to remove
+                    level--;
+                }
+            }
+
+            if (removed)
+            {
+                count--;    
+            }
+
+            return removed;
         }
 
         public bool Contains(T item)
         {
-            throw new NotImplementedException();
+            Node<T> node = head;
+            int level = head.Height - 1;
+
+            while (level >= 0)
+            {
+                int comparison;
+                if (node[level] == null)
+                {
+                    comparison = 1;
+                }
+                else
+                {
+                    comparison = node[level].Value.CompareTo(item);
+                }
+
+                if (comparison == 0)
+                {
+                    return true; 
+                }
+                else if (comparison < 0)
+                {
+                    node = node[level];
+                }
+                else
+                {
+                    level--;
+                }
+            }
+
+            return false;
         }
 
         public void CopyTo(T[] array, int arrayIndex)
         {
-            throw new NotImplementedException();
+            if (array.Length - arrayIndex > Count) // not enough space
+            {
+                throw new Exception("Not nuff space");
+            }
+
+            Node<T> node = head;
+
+            while (node[0].Value != null)//while the bottom node has a next
+            {
+                array[arrayIndex] = node.Value;
+                node = node[0];
+                arrayIndex++;
+            }
         }
 
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            Node<T> cur = head;
+            while (cur[0] != null)
+            {
+                yield return cur[0].Value;
+                cur = cur[0];
+            }
         }    
 
         IEnumerator IEnumerable.GetEnumerator()

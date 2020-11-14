@@ -12,6 +12,15 @@ namespace Skip_List_Project
 
             list.Add(5);
             list.Add(10);
+            list.Add(15);
+
+            bool thing = list.Contains(0);
+
+
+            foreach (int value in list)
+            {
+                Console.WriteLine(value);
+            }
         }
     }
 }
