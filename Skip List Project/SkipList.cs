@@ -169,14 +169,20 @@ namespace Skip_List_Project
                 throw new Exception("Not nuff space");
             }
 
-            Node<T> node = head;
 
-            while (node[0].Value != null)//while the bottom node has a next
+            foreach (var item in this)
             {
-                array[arrayIndex] = node.Value;
-                node = node[0];
-                arrayIndex++;
+                array[arrayIndex++] = item;
             }
+
+            //Node<T> node = head;
+
+            //while (node[0].Value != null)//while the bottom node has a next
+            //{
+            //    array[arrayIndex] = node.Value;
+            //    node = node[0];
+            //    arrayIndex++;
+            //}
         }
 
         public IEnumerator<T> GetEnumerator()
